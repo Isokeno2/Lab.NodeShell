@@ -1,8 +1,13 @@
-process.stdout.write ('prompt > ');
+const incomingData = require('./pwd')
 
-process.stdin.on ('data', (data) => {
-  const cmd = data.toString().trim();
+incomingData();
 
-  process.stdin.write(process.cwd());
-  process.stdout.write('\nprompt > ');
-})
+// const list = require('./ls')
+
+// list();
+
+
+
+// const greeting = 'hello'
+// module.exports = greeting
+
